@@ -30,8 +30,6 @@ use crate::{EmulationPreventionIo, NALUnitType};
 /// ISO/IEC-14496-10-2022 - 7.3.2
 #[derive(Debug, Clone, PartialEq)]
 pub struct Sps {
-    /// Test temp field for semver-checks
-    pub test_change_for_semver_check: bool,
     /// The `nal_ref_idc` is comprised of 2 bits.
     ///
     /// A nonzero value means the NAL unit has any of the following: SPS, SPS extension,
@@ -510,7 +508,6 @@ impl Sps {
         }
 
         Ok(Sps {
-            test_change_for_semver_check: true,
             nal_ref_idc,
             nal_unit_type: NALUnitType(nal_unit_type),
             profile_idc,
@@ -889,7 +886,6 @@ mod tests {
 
         insta::assert_debug_snapshot!(result, @r"
         Sps {
-            test_change_for_semver_check: true,
             nal_ref_idc: 0,
             nal_unit_type: NALUnitType::SPS,
             profile_idc: 100,
@@ -1145,7 +1141,6 @@ mod tests {
 
         insta::assert_debug_snapshot!(result, @r"
         Sps {
-            test_change_for_semver_check: true,
             nal_ref_idc: 0,
             nal_unit_type: NALUnitType::SPS,
             profile_idc: 44,
@@ -1342,7 +1337,6 @@ mod tests {
 
         insta::assert_debug_snapshot!(result, @r"
         Sps {
-            test_change_for_semver_check: true,
             nal_ref_idc: 0,
             nal_unit_type: NALUnitType::SPS,
             profile_idc: 77,
@@ -1454,7 +1448,6 @@ mod tests {
 
         insta::assert_debug_snapshot!(result, @r"
         Sps {
-            test_change_for_semver_check: true,
             nal_ref_idc: 0,
             nal_unit_type: NALUnitType::SPS,
             profile_idc: 77,
@@ -1906,7 +1899,6 @@ mod tests {
 
         insta::assert_debug_snapshot!(result, @r"
         Sps {
-            test_change_for_semver_check: true,
             nal_ref_idc: 0,
             nal_unit_type: NALUnitType::SPS,
             profile_idc: 77,
@@ -2377,7 +2369,6 @@ mod tests {
 
         insta::assert_debug_snapshot!(reduced_result, @r"
         Sps {
-            test_change_for_semver_check: true,
             nal_ref_idc: 0,
             nal_unit_type: NALUnitType::SPS,
             profile_idc: 100,
