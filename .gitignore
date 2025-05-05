@@ -14,6 +14,11 @@ benchmark.txt
 local.just
 !valgrind_suppressions.log
 
+# Docusaurus
+docs/build
+docs/.docusaurus
+docs/.cache-loader
+
 # Website
 website/node_modules/
 
