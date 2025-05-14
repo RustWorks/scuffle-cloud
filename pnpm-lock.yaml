@@ -88,6 +88,9 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.0.5
         version: 4.1.5(vite@6.2.0(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
+      '@tanstack/svelte-query':
+        specifier: ^5.62.2
+        version: 5.75.7(svelte@5.28.2)
       '@types/lodash':
         specifier: ^4.17.16
         version: 4.17.16
@@ -1964,6 +1967,14 @@ packages:
     resolution: {integrity: sha512-FE1stRoqdHSb7RxesMfCXE8icwI1W6zGE/512ae3ZDrpkQYTTYeSyUJPRCjZd8CwVAhpDUbi1YR8pcZioFJQ/w==}
     peerDependencies:
       vite: ^5.2.0 || ^6
+
+  '@tanstack/query-core@5.75.7':
+    resolution: {integrity: sha512-4BHu0qnxUHOSnTn3ow9fIoBKTelh0GY08yn1IO9cxjBTsGvnxz1ut42CHZqUE3Vl/8FAjcHsj8RNJMoXvjgHEA==}
+
+  '@tanstack/svelte-query@5.75.7':
+    resolution: {integrity: sha512-KbAZoelJC8OJvh5fX0QRcbdBs8xu/1SJkEwaMs0rTgd0Do28ISLU+bMyb4H0E7whvnzKmh6CBCGqu2gxmfmvwA==}
+    peerDependencies:
+      svelte: ^3.54.0 || ^4.0.0 || ^5.0.0
 
   '@trysound/sax@0.2.0':
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
@@ -9129,6 +9140,13 @@ snapshots:
       '@tailwindcss/oxide': 4.1.5
       tailwindcss: 4.1.5
       vite: 6.2.0(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)
+
+  '@tanstack/query-core@5.75.7': {}
+
+  '@tanstack/svelte-query@5.75.7(svelte@5.28.2)':
+    dependencies:
+      '@tanstack/query-core': 5.75.7
+      svelte: 5.28.2
 
   '@trysound/sax@0.2.0': {}
 
