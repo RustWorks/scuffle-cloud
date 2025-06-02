@@ -24,7 +24,7 @@ scuffle-changelog = { optional = true, path = "../changelog", version = "0.1.0" 
 
 fixed = "1.29.0"
 isobmff = { path = "../isobmff", version = "0.1.0" }
-scuffle-aac = { path = "../aac", version = ">=0.1.4" }
+scuffle-aac = { path = "../aac", version = "0.1.4" }
 scuffle-av1 = { features = ["isobmff"], path = "../av1", version = ">=0.1.4" }
 scuffle-bytes-util = { path = "../bytes-util", version = ">=0.1.4" }
 scuffle-flv = { path = "../flv", version = ">=0.2.2" }
